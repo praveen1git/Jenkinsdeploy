@@ -14,7 +14,7 @@ environment {
               steps {
                   sh "docker stop demo"
                   sh "docker rm demo "
-                  sh "docker run --restart always --name demo -p 5000:5000 -d ${env.IMAGE_REPO}:${env.GIT_COMMIT}"
+                  sh "docker run --restart always --name demo -p 5001:5001 -d ${env.IMAGE_REPO}:${env.GIT_COMMIT}"
               }
          }
              }
